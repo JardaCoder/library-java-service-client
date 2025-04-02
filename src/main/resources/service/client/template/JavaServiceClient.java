@@ -177,7 +177,7 @@ public class ${serviceClient.name}#{if}(!${serviceClient.superclass.isEmpty()}) 
 		List<String> endpoints = this.getEndpoints();
 		return (CollectionUtils.isEmpty(endpoints) ? "" : endpoints.get(RandomHelper.getPositiveRandomLong((long) (endpoints.size())).intValue()));
 	}
-	
+
 #{foreach}( ${operation} in ${serviceClient.operations} )
 
 	/**
